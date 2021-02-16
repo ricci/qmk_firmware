@@ -17,7 +17,7 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-[_QWERTY] = LAYOUT_5x7(
+[_QWERTY] = LAYOUT_5x7_ALT(
   // left hand
    KC_GRV,    KC_1,    KC_2,    KC_3,   KC_4,   KC_5,   KC_DEL,
    KC_MPLY,   KC_Q,    KC_W,    KC_E,   KC_R,   KC_T,   KC_PGDN,
@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_PGUP, KC_PGDN,
         KC_LCTL, KC_LALT),
 
-[_FN] = LAYOUT_5x7(
+[_FN] = LAYOUT_5x7_ALT(
   // left hand
    _______,   KC_F1,     KC_F2,      KC_F3,    KC_F4,     KC_F5,    RESET,
    _______,   _______,   _______,    KC_UP,    _______,   _______,  _______,
@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______,
         _______, _______),
 
-[_NUMPAD] = LAYOUT_5x7(
+[_NUMPAD] = LAYOUT_5x7_ALT(
   // left hand
    _______,   _______,   _______,   _______,   _______,   _______,  _______,
    _______,   _______,   _______,   _______,   _______,   _______,  _______,
