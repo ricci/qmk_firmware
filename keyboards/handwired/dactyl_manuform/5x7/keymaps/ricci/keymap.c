@@ -27,13 +27,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                KC_LGUI, KC_BSPC, KC_LALT,
                                KC_LCTL, KC_LSFT, TT(_FN),
         // right hand
-                     KC_7,    KC_8,    KC_9,    KC_0,     KC_MINS,  KC_EQL,   KC_GRV,
-                     KC_RBRC, KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,     KC_BSLS,
+                     KC_PSCR, KC_6,    KC_7,    KC_8,     KC_9,     KC_0,     KC_MINS,
+                     KC_INS,  KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,     KC_BSLS,
                  TG(_NUMPAD), KC_H,    KC_J,    KC_K,     KC_L,     KC_SCLN,  KC_QUOT,
-                              KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH,  OSM(MOD_RSFT),
-                                       KC_LEFT, KC_UP,    KC_DOWN,  KC_RGHT,
-        KC_BSPC, KC_ENT, KC_PGUP,
-        KC_PGDN, KC_LCTL, KC_LALT),
+                              KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH,  KC_EQL,
+                                                KC_LBRC,  KC_RBRC,  KC_HOME,  KC_END,
+        KC_RALT, KC_SPC,  KC_ENT,
+        KC_ESC,  KC_RSFT, KC_LCTL),
 
 [_FN] = LAYOUT_5x7_ALT(
   // left hand
@@ -45,9 +45,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, _______, _______,
                                _______, _______, _______,
         // right hand
-                     KC_F7,     KC_F8,     KC_F9,     KC_F10,    KC_F11,    KC_F12,    _______,
+                     _______,   KC_F6,     KC_F7,     KC_F8,     KC_F9,     KC_F10,   _______,
                      _______,   _______,   _______,   _______,   _______,   _______,   _______,
-                     _______,   _______,   _______,   _______,   _______,   _______,   _______,
+                     _______,   KC_LEFT,   KC_DOWN,   KC_UP,     KC_RGHT,   _______,   _______,
                                 _______,   _______,   _______,   _______,   _______,   _______,
                                                       _______,   _______,   _______,   _______,
         _______, _______, _______,
