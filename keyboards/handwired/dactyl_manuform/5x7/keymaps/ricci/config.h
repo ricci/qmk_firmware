@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_SERIAL
 //#undef USE_I2C
 //#define SOFT_SERIAL_PIN D1
-#define SOFT_SERIAL_PIN F4
+//#define SOFT_SERIAL_PIN F4
 //#define USE_I2C
 
 #define MASTER_LEFT
