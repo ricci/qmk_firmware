@@ -1,0 +1,2 @@
+ENCODER_ENABLE = yes
+BOOTLOADER = atmel-dfu
