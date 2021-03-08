@@ -30,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                      KC_ENT,  KC_H,    KC_J,    KC_K,     KC_L,     KC_SCLN,  KC_QUOT,
                               KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH,  KC_MINS,
                                                 KC_LBRC,  KC_RBRC,  KC_HOME,  KC_END,
-        KC_RALT, KC_SPC,  KC_ESC,
+        KC_MUTE, KC_SPC,  KC_ESC,
         KC_LCTL, KC_RSFT, KC_RALT),
 
 [_FN] = LAYOUT_5x7_ALT(
@@ -52,3 +52,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______)
 
 };
+
+void encoder_update_user(uint8_t index, bool clockwise) {
+    if (clockwise) {
+        tap_code(KC_VOLU);
+    } else {
+        tap_code(KC_VOLD);
+    }
+}

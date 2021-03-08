@@ -19,12 +19,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 
-//#define USE_SERIAL
-#define USE_I2C
+#define USE_SERIAL
+//#undef USE_I2C
+//#define SOFT_SERIAL_PIN D1
+#define SOFT_SERIAL_PIN F4
+//#define USE_I2C
 
 #define MASTER_LEFT
-// #define MASTER_RIGHT
-//#define EE_HANDS
+//#define MASTER_RIGHT
+#define EE_HANDS
 // Rows are doubled-up
 
 #define LAYOUT_5x7_ALT( \
@@ -57,3 +60,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     { R51,   R52,   R53,   R54,   R55,   R56,   R57   }, \
     { R61,   R62,   R63,   KC_NO, KC_NO, KC_NO, KC_NO }  \
 }
+
+#define MATRIX_ROW_PINS_LEFT { D4, C6, D7, E6, B4, B5 }
+#define MATRIX_COL_PINS_LEFT { F5, F6, F7, B1, B3, B2, B6 }
+
+#define MATRIX_ROW_PINS_RIGHT { D3, D2, D4, C6, D7, E6 }
+#define MATRIX_COL_PINS_RIGHT { F5, F6, F7, B1, B3, B2, B6 }
+
+// XXX: This seems to be required even though I'm not using this on left
+// side, so define to pins I'm not using on the left side
+#define ENCODERS_PAD_A { F0 }
+#define ENCODERS_PAD_B { F1 }
+
+#define ENCODERS_PAD_A_RIGHT { B5 }
+#define ENCODERS_PAD_B_RIGHT { B4 }
+
+//#define JOYSTICK_BUTTON_COUNT 0
+//#define JOYSTICK_AXES_COUNT 2
+//
+//joystick_config_t joystick_axes[JOYSTICK_AXES_COUNT] = {
+//    [0] = JOYSTICK_AXIS_IN(B4, 900, 575, 285),
+//    [1] = JOYSTICK_AXIS_IN(B5, 900, 575, 285),
+//};
